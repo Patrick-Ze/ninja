@@ -86,7 +86,7 @@ void StatusPrinter::BuildEdgeFinished(Edge* edge, int64_t end_time_millis,
     } else {
         printer_.PrintOnNewLine("FAILED: " + outputs + "\n");
     }
-    printer_.PrintOnNewLine(edge->EvaluateCommand() + "\n");
+    // printer_.PrintOnNewLine(edge->EvaluateCommand() + "\n");
   }
 
   if (!output.empty()) {
